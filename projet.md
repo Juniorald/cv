@@ -1,5 +1,7 @@
 # Projet : "Trap Master" - Un jeu de plateforme impitoyable (HTML5/JavaScript)
 
+source : https://www.gamepix.com/fr/play/trap-adventure-2
+
 ## 1. Description du Projet
 
 Ce projet consiste à développer un jeu de plateforme 2D, inspiré par le concept de **"jeu de la mort"** popularisé par des titres comme *Trap Adventure 2*. L'objectif est de créer une expérience de jeu qui met l'accent sur la **mémorisation**, la **réflexion rapide** et la **difficulté imprévisible**. Le jeu, nommé **"Trap Master"**, sera un prototype de quelques niveaux démontrant la faisabilité d'un tel concept.
