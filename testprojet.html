@@ -553,7 +553,7 @@
                 }
 
                 // Vérifier si le joueur a atteint le drapeau (EXACTEMENT X:751, Y:81)
-                if (this.x >= 751 && this.y <= 81) {
+                if (this.x >= 744 && this.x <= 751 && this.y >= 90 && this.y <= 150) {
                     return 'won';
                 }
 
@@ -863,15 +863,15 @@
                 // Blocs tombants
                 this.fallingBlocks.push(new FallingBlock(150, 200));
                 this.fallingBlocks.push(new FallingBlock(380, 150));
-                this.fallingBlocks.push(new FallingBlock(600, 100));
+                //this.fallingBlocks.push(new FallingBlock(600, 100));
 
                 // Pièges retardés
-                this.delayedTraps.push(new DelayedTrap(320, 350, 30, 30, 2.5));
-                this.delayedTraps.push(new DelayedTrap(470, 270, 30, 30, 2));
-                this.delayedTraps.push(new DelayedTrap(620, 190, 30, 30, 3));
+              //  this.delayedTraps.push(new DelayedTrap(320, 350, 30, 30, 2.5));
+                //this.delayedTraps.push(new DelayedTrap(470, 270, 30, 30, 2));
+                //this.delayedTraps.push(new DelayedTrap(620, 190, 30, 30, 3));
 
                 // Drapeau d'arrivée - Exactement à X:751, Y:81
-                this.goal = { x: 751, y: 81, width: 30, height: 80 };
+                this.goal = { x: 751, y: 81, width: 60, height: 90 };
             }
 
             update(deltaTime, playerX) {
