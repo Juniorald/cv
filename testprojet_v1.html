@@ -553,7 +553,7 @@
                 }
 
                 // Vérifier si le joueur a atteint le drapeau (EXACTEMENT X:751, Y:81)
-                if (this.x >= 744 && this.x <= 751 && this.y >= 86 && this.y <= 160) {
+                if (this.x >= 740 && this.x <= 751 && this.y >= 80 && this.y <= 210) {
                     return 'won';
                 }
 
@@ -721,11 +721,11 @@
                 this.y = y;
                 this.width = width;
                 this.height = height;
-                this.velocityY = 0;
+                this.velocityY = 5;
                 this.falling = false;
                 this.triggerX = x - 100;
                 this.triggerWidth = 200;
-                this.rotation = 0;
+                this.rotation = 1;
             }
 
             update(deltaTime, playerX) {
@@ -849,24 +849,24 @@
 
                 // ==================== PIÈGES SURPRISES ====================
                 this.traps.push({ x: 120, y: 420, width: 30, height: 30 });
-                this.traps.push({ x: 280, y: 350, width: 30, height: 30 });
-                this.traps.push({ x: 430, y: 270, width: 30, height: 30 });
-                this.traps.push({ x: 580, y: 190, width: 30, height: 30 });
-                this.traps.push({ x: 700, y: 120, width: 30, height: 30 });
+                this.traps.push({ x: 250, y: 350, width: 30, height: 30 });
+                this.traps.push({ x: 420, y: 270, width: 30, height: 30 });
+                this.traps.push({ x: 490, y: 190, width: 30, height: 30 });
+                this.traps.push({ x: 670, y: 120, width: 20, height: 30 });
 
-                // Pièges surprises supplémentaires
-                this.traps.push({ x: 150, y: 380, width: 25, height: 25 });
-                this.traps.push({ x: 320, y: 300, width: 25, height: 25 });
-                this.traps.push({ x: 470, y: 220, width: 25, height: 25 });
-                this.traps.push({ x: 620, y: 140, width: 25, height: 25 });
+                // A ajouter pour le niveau 1 Pièges surprises supplémentaires
+                //this.traps.push({ x: 150, y: 380, width: 25, height: 25 });
+                //this.traps.push({ x: 320, y: 300, width: 25, height: 25 });
+                //this.traps.push({ x: 470, y: 220, width: 25, height: 25 });
+                //this.traps.push({ x: 620, y: 140, width: 25, height: 50 });
 
-                // Blocs tombants
-                this.fallingBlocks.push(new FallingBlock(150, 200));
-                this.fallingBlocks.push(new FallingBlock(380, 150));
-                //this.fallingBlocks.push(new FallingBlock(600, 100));
+                // A ajouter pour le niveau 2 Blocs tombants
+               // this.fallingBlocks.push(new FallingBlock(150, 250));
+               // this.fallingBlocks.push(new FallingBlock(380, 150));
+               // this.fallingBlocks.push(new FallingBlock(650, 90));
 
-                // Pièges retardés
-              //  this.delayedTraps.push(new DelayedTrap(320, 350, 30, 30, 2.5));
+                // a ajouter pour le niveau 3 Pièges retardés
+               //this.delayedTraps.push(new DelayedTrap(320, 350, 30, 30, 4));
                 //this.delayedTraps.push(new DelayedTrap(470, 270, 30, 30, 2));
                 //this.delayedTraps.push(new DelayedTrap(620, 190, 30, 30, 3));
 
